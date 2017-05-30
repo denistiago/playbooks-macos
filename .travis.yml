@@ -1,0 +1,20 @@
+os:
+    - osx
+
+branches:
+    only:
+        - master
+
+install:
+    - sudo pip install ansible
+
+before_script:
+    - rm -rf ~/.vim
+    - cp group_vars/workstation.example group_vars/workstation
+    - brew update
+    - brew install python
+    - pip install virtualenv
+    - virtualenv .
+    - source bin/activate
+
+script: ansible-playbook workstation.yml -vv

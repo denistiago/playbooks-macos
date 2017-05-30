@@ -1,0 +1,13 @@
+brew_packages:
+    - ack
+    - nmap
+    - tree
+    - wget
+    - tig
+    - hub
+
+brew_cask_packages:
+    - iterm2
+
+browsers:
+    - google-chrome

@@ -1,0 +1,9 @@
+- name: verify homebrew cask presence
+  command: brew cask
+  register: brew_cask_present
+  changed_when: false
+  ignore_errors: true
+
+- name: be sure homebrew cask is installed
+  shell: brew install caskroom/cask/brew-cask
+  when: brew_cask_present|failed

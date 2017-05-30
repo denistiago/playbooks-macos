@@ -1,0 +1,3 @@
+- name: be sure nvm is installed and up to date
+  homebrew: name=nvm
+  ignore_errors: True
