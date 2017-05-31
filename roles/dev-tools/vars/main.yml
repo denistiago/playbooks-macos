@@ -5,9 +5,13 @@ brew_packages:
     - wget
     - tig
     - hub
+    - gist
 
 brew_cask_packages:
     - iterm2
+    - spectacle
+    - sublime
+    - caffeine
 
 browsers:
     - google-chrome
